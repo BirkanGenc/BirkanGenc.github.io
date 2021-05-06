@@ -1,0 +1,402 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200,700);
+
+
+/*************************
+*******body******
+**************************/
+
+body {
+  font-family: 'Dosis', sans-serif; /*yazı aılesı*/
+  font-size: 17px; /*font buyuklugu*/
+  color: #fff /*yazı rengı */
+}
+
+
+.btn {
+  border-radius: 0;
+  font-family: 'Yanone Kaffeesatz','sans-serif';
+  font-size: 20px;
+  padding: 9px 23px;
+}
+
+a {
+  -webkit-transition: 300ms; /*efekt gecıkme mıktarları*/
+  -moz-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+a:focus, 
+a:hover {
+  text-decoration: none;
+  outline: none
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Yanone Kaffeesatz', 'sans-serif';
+  font-weight: 300;
+  text-transform: uppercase; /*butun metınlerı buyuk harfe cevırır*/
+}
+
+h2 {
+  font-size: 36px /*font tıpı*/
+}
+
+.navbar-toggle {
+  margin-top: 12px /* Üstten bırakılaln boşluğu ayarlar*/
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #fff; /* arka plan rengini ayralar*/
+}
+
+.navbar-toggle, 
+.navbar-toggle:focus {
+  border:1px solid #fff; /* kenarlık ekleyen kod bloğu*/
+  outline: none; /* dış kenarlık çizgisi*/
+}
+
+
+/*************************
+*******Header CSS******
+**************************/
+
+.header-top {
+  display: block; /* Elementlerin block şeklinde davranmasını sağlayan kod bloğudur*/
+  overflow: hidden; /* Eleman kutusundan taşan içeriği kırpar. ve görünmemesini sağlar*/
+  padding: 25px; /*element kenarı ile element içeriği arasındaki boşluktur// menu kutusu ile sayfa arası boslugu ayarlar*/
+}
+
+.main-nav { 
+  position: absolute; /* Konumlandırılmış bir ata öğesi bulunmaz ise, doğrudan web sayfasına göre konumlandırır */
+  width: 100%;  /*menü kısmı genişliği ayarlar*/
+  z-index: 999; /*üst üste gelen elementler arasında hangisinin üstte hangisinin altta görüneceğini ayarlayan bir özelliktir. menü kısmı yazıları*/ 
+}
+
+.main-nav 
+.container { 
+  width: 100% /* genişliği ayarlayan kod kısmı*/
+}
+
+
+
+.navbar-brand {
+  background-color: #1B7B98;
+  height: 90px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 297px;
+}
+
+.navbar-brand img {
+  position: absolute;
+  top: -35px;
+}
+
+.navbar-right {
+  background-color: #1B7B98;  /* arkapan rengi ayarlayan kod satırı// menu kısmı rengi*/ 
+  padding:0 95px 0 0; /*element kenarı ile element içeriği arasındaki boşluktur*/
+  opacity: .9 /*opaklık mıkatrı*/
+}
+
+.navbar-right li a {
+  padding: 35px 21px; /* element kenarı ıle element icerıgı arasındakı bosluk*/
+  font-size: 22px; /* yazı boyutu*/
+  color: #fff; /* menu kısmı yazı rengi*/
+  text-transform: uppercase; /* uygulanan metindeki tüm harfleri büyük harfe çevirir*/
+  font-family: 'Yanone Kaffeesatz', 'sans-serif'; /*yazı ailesi*/
+  font-weight: 1000; /*yazı buyuklugu */
+}
+
+.navbar-right li a:hover, 
+.navbar-right li a:focus,  
+.navbar-right .active a {
+  background-color: #fff; /* menu kısmı imleç geldigınde degisen renk komutu*/ 
+  color: #658f16 /* yazı rengi */
+}
+
+
+.fixed-menu {
+  background-color: #1B7B98;
+  position: fixed;
+  top: 0;
+}
+
+.fixed-menu .navbar-right {
+  padding: 0;
+}
+
+
+.fixed-menu .navbar-right li a {
+  font-size: 18px;
+  padding: 20px 25px;
+  text-shadow:inherit;
+}
+
+.fixed-menu .navbar-brand {
+  height: 60px;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 0;
+  width: 125px;
+}
+
+.fixed-menu .navbar-brand img {
+  height:60px;
+  top: 0;
+}
+
+.fixed-menu .header-top {
+  display: none;
+}
+
+
+
+/*************************
+*******Home CSS******
+**************************/
+
+#home {
+  position: relative; /*nesne gene normal akış içerisinde olmaya devam eder ancak top, right, bottom ve left özelliklerini kullanma fırsatı verir.*/
+  overflow: hidden; /*Eleman kutusundan taşan içerik kırpılır ve içeriğin geri kalan kısmı görünmez olur*/
+}
+
+#main-slider img {
+  width: 1000%  /*genişlik ayaralayan kod bloğu// sanatcı resimleri boyu*/
+}
+
+#main-slider 
+.carousel-caption {
+  background: none repeat scroll 0 0 #000000; /*arka paln rengi// kayıt için mail kısmı*/
+  bottom: 14%; /*kayıt için mail butonu yeri**/
+  float: left; /* butonu sola yaslayan kod bloğu*/
+  left: 0;
+  opacity: 0.8; /* opaklık miktarı*/
+  padding:10px 60px 35px; /*iç boşluk miktarı*/
+  right: inherit;
+  text-transform: uppercase; /* bütün harfleri büyük harfe cevırır*/
+  color: #fff; /*yazı rengi kayıt için mail kısmı*/
+  text-align: left; /* bir meetni yatayda hz,lamak için kullanılır*/
+}
+
+
+#main-slider 
+.carousel-caption h2 {  
+  font-size: 58px; /*yazı boyutu// etkinlik 10-20 mayıs arası kısmı*/
+ 
+}
+
+#main-slider 
+.carousel-caption h4 {
+  font-size: 45px;  /*yazı boyutu//etkinlik ücretsizdir*/
+}
+
+#main-slider 
+.carousel-caption a {
+  font-size: 22px; /*yazı boyutu // kayıt için mail atınız kısmı*/
+  color: #2da1c5 /*yazı rengi*/
+}
+
+#main-slider 
+.carousel-caption a:hover {
+  color: #a6254c /*üstüne imleç geldiginde degısen yazı rengi// kayıt için mail*/
+}
+
+#main-slider 
+.carousel-caption a:hover i {
+  margin-left: 35px /* bırakılan bosluk*/
+}
+
+#main-slider 
+.carousel-caption a i {
+  margin-left: 15px; /*bırakılan bosluk*/
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out; /*efekt gecıkme surelerı*/
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+ /*************************
+*******Event CSS******
+**************************/
+#event {
+  background-color: #6bb8cf; /*arkaplan rengi// etkinlik sanatcıları arka plan*/
+  position: relative; /*elementin başlangıç noktasını dikey ve yatay olarak değiştiren kod*/
+  background-repeat: no-repeat; /*Arkaplan görselinin tekrarlanıp tekrarlanmayacağını, tekrarlanacak ise nasıl tekrarlanacağını belirlemek için kullanılır.*/
+}
+
+.guitar {
+  position: absolute;
+  right:0;
+  top: 0
+}
+
+
+#event h2 {
+  color: #020202; /*etkinlik sanatcıları yazı rengi */
+  font-size: 85px; /* yazı boyutu*/
+  font-weight: 300;
+  margin-bottom: 40px; /* bırakılacak bosluk mıktarı*/
+  margin-top: 70px;
+  text-transform: uppercase; /* bütün harfleri büyük harfe cevırır*/
+}
+
+.single-event {
+  margin-bottom: 70px;
+}
+
+.single-event h4 {
+  color: #0a0a0a; /*sanatçı isimleri yazı rengi*/ 
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 26px;
+  margin-top: 25px;
+  text-transform: uppercase; /* bütün harfleri büyük harfe cevırır*/
+}
+
+
+.single-event h5 {
+  font-size: 29px; /* konser tarih ve saat yazı boyutu*/
+  font-weight: 100; /*yazı boyutu*/
+  display: block;
+}
+
+#event-carousel {
+  position: relative; /*elementin başlangıç noktasını dikey ve yatay olarak değiştiren kod*/
+}
+
+
+
+
+/*************************
+*******About CSS**********
+**************************/
+
+#about {
+  background-color: #75B46E;   /*etkinlik hakkında kısmı arka plan rengi */
+  position: relative;   /* elementın baslangıç noktasını dıkey ve yatay olarak degıstıren kod*/
+  width: 100%; /* genişlik*/
+  display: flex; /*Boyutları bilinmeyen-dinamik alanları daha kolay yönetmek için kullanılır*/
+}
+
+.guitar2 {
+  top: 0;
+  width: 50%;  /*gitor png boyutu */
+}
+
+.guitar2 img {
+  padding-top: 3%; /*üstten bırakılan bosluk*/
+}
+
+.about-content {
+  width: 50%; /*genişlik miktarı*/
+   background-image: url("../images/about-bg.jpg"); /*arka plan resmi*/
+  background-position: left bottom; /*Arkaplan görselinin nereden başlayacağını belirler. Arkaplan varsayılan olarak sol üst köşeye dayalı bir şekilde görünecektir.*/
+  background-repeat: no-repeat;
+  background-size: cover; /*Ölçekli olacak şekilde resim ait oldugu html elemanını kaplayacak şekilde büyütecek kod*/
+  padding: 70px 70px 110px; /*içten bırakılacak boşluk mıktarı*/
+}
+
+
+#about h2 {
+  margin-bottom: 23px;
+}
+
+.about-content p {
+  font-size: 17px; /*etkinlik icerıgı kısmı yazı boyutu*/
+  font-family: 'Dosis',sans-serif; /*yazı aılesı*/
+}
+
+#about .btn-primary {
+  background-color: #ca0842; /*tarihi ve mekanı goruntule butonu arkaplanrengi*/
+  color: #fff; /*buton yazı rengi*/
+  text-transform: capitalize; /* capitalize , kelimelerin yalnızca ilk harflerini etkiler*/
+  border: none;
+  margin-top: 28px; /*boşluk miktarı*/
+}
+
+#about .btn-primary:hover {
+  background-color: #000000 /*imleç üstüne geldiğinde buton rengi degıstıren kod*/
+}
+
+
+
+
+/*************************
+******Contact CSS****
+**************************/
+
+.contact-section {
+  background-color: #f7ab24; /*en alt kısım arka paln rengi*/
+  background-image: url("../images/contact-bg.jpg"); /*arka plan rengi*/
+  background-position:60% 0; /*arka plan rengi tekrarlama kodu*/
+  position: relative;
+}
+
+.ear-piece {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#contact .container {
+  padding-top:47px;
+}
+
+#contact h3 {
+  text-transform:inherit; /*ilestşim yazıları rengi*/
+  color: #373737; 
+}
+
+#contact-section h3 {  
+  margin-bottom: 25px /*kutuların ust taraf ıle olan boslugu*/
+}
+
+#contact address {
+  font-size: 18px;  
+  color: #373737;  /*adres bılgılerı rengi*/
+}
+
+.contact-text {
+  margin-bottom: 35px; /*bosluk  mıktarı*/
+  display: block;
+}
+
+
+
+
+#contact-section .form-control:focus {
+  border-color: #ae750d;
+}
+
+#contact-section input {  
+  height: 44px;
+}
+
+#contact-section textarea {
+  height: 90px; /*textarea bosluk mıktarı*/
+  resize:none;
+}
+
+#contact-section .btn-primary {
+  background-color: #373737; /*gonder butonu rengı*/
+  color: #24f79f; /*gonder butonu yazı rengı*/
+  border: none;  
+  font-size: 24px;
+  padding: 6px 42px;
+  margin-bottom: 110px; /*bosluk mıktarı*/ 
+  margin-top: 10px
+}
+
+#contact-section .btn-primary:hover {
+  background-color: #d11313; /*gonder butonu ustune imlec geşgınde degısen renk kodu*/
+  color: #fff
+}
+
+
+
+
